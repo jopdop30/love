@@ -1,58 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <title>Love</title>
-  <style type="text/css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+    <style>
+ </style>
+ </head>
+ <body>
+ 
+
+
+   <div class="jumbotron jumbotron-fluid" style="background-image: linear-gradient(to right, #f9f9f9, #f5f5f5, #f0f0f0, #ececec, #e8e8e8, #e5e5e5, #e1e1e1, #dedede, #dbdbdb, #d7d7d7, #d4d4d4, #d1d1d1);">
+  <div class="container">
+     <h1 class="display-4">Bao Loves You!</h1>
+  <p class="lead">To Retief's reading of Hannah Kent's 'Burial Rites'.</p>
+  <hr class="my-4">
+  <p>Each chapter will be read by Retief, followed by a written synopsis.</p>
+  <a class="btn btn-primary btn-lg" href="/prologue" role="button">Listen now</a>
+     </div>
+</div>
    
-  </style>
-  </head>
-  <body>
-  
-    <!-- Load Stripe.js on your website. -->
-<script src="https://js.stripe.com/v3"></script>
-
-<!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
-<button
-  style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
-  id="checkout-button-plan_HDUsQvJgR341im"
-  role="link"
->
-  Checkout
-</button>
-
-<div id="error-message"></div>
-
-<script>
-(function() {
-  var stripe = Stripe('pk_test_fBdAeVqe7CDSqHGpDpUYHgMy00yDujOBKE');
-
-  var checkoutButton = document.getElementById('checkout-button-plan_HDUsQvJgR341im');
-  checkoutButton.addEventListener('click', function () {
-    // When the customer clicks on the button, redirect
-    // them to Checkout.
-    stripe.redirectToCheckout({
-      items: [{plan: 'plan_HDUsQvJgR341im', quantity: 1}],
-
-      // Do not rely on the redirect to the successUrl for fulfilling
-      // purchases, customers may not always reach the success_url after
-      // a successful payment.
-      // Instead use one of the strategies described in
-      // https://stripe.com/docs/payments/checkout/fulfillment
-      successUrl: 'https://love.retief.club',
-      cancelUrl: 'https://love.retief.club',
-    })
-    .then(function (result) {
-      if (result.error) {
-        // If `redirectToCheckout` fails due to a browser or network
-        // error, display the localized error message to your customer.
-        var displayError = document.getElementById('error-message');
-        displayError.textContent = result.error.message;
-      }
-    });
-  });
-})();
-</script>
-    
-  </body>
+<div class="container">
+  <h3>What is Burial Rites?</h3>
+  <p>Burial Rites is a book written by Australian author Hannah Kent. The book is based on a true story.</p>
+  <p>It tells the story of Agnes Magnúsdóttir, a servant in northern Iceland who was condemned to death after the murder of two men, one of whom was her employer, and became the last woman put to death in Iceland.</p>
+  <hr class="my-4">
+  <h4>I'm bored, what else can I do?</h4>
+  <p>If you're bored then check this website out!</p>
+   <a class="btn btn-outline-dark btn-sm" href="https://www.toptoilettips.com" target="_blank" role="button">Top Toilet Tips</a>
+  <p></p>
+   </div>
+   
+   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+   <script>
+     $enable-shadows
+   </script>
+ </body>
 </html>
