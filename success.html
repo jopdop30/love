@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Bao Love</title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.css" />
+	<style>
+		body {
+			font-family: 'Montserrat', sans-serif;
+		}
+		h1 {
+			text-align:center;
+			font-size:8vw;
+		}
+		h2 {
+			text-align:center;
+			color:#383838;
+			font-size:4vw;
+		}
+		mark {
+  background-color: #F38596;
+  color: #e3e3e3;
+}
+
+		#section2 {
+			background: linear-gradient(to top, #f38596, #ea89a6, #de8eb3, #d094bc, #c299c2);
+		}
+		.button {
+
+  border: none;
+background:#EBBFC4;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 3vw;
+  margin: 4px 8px;
+  cursor: pointer;
+transition-timing-function: ease-in;
+transition: box-shadow 0.4s, border-radius 0.4s, background 0.4s;
+}
+			.button3 {border-radius: 8px;}
+				.button:hover {
+			box-shadow: 0px 0px 50px 4px #F38596;
+			border-radius: 16px;
+			background: #F38596;
+		}
+		.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 1vh;
+}
+
+.chevron {
+  position: absolute;
+  width: 2.1rem;
+  height: 0.48rem;
+  opacity: 0;
+  transform: scale(0.3);
+  animation: move-chevron 3s ease-out infinite;
+}
+
+.chevron:first-child {
+  animation: move-chevron 3s ease-out 1s infinite;
+}
+
+.chevron:nth-child(2) {
+  animation: move-chevron 3s ease-out 2s infinite;
+}
+
+.chevron:before,
+.chevron:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 50%;
+  background: #2c3e50;
+}
+
+.chevron:before {
+  left: 0;
+  transform: skewY(30deg);
+}
+
+.chevron:after {
+  right: 0;
+  width: 50%;
+  transform: skewY(-30deg);
+}
+
+@keyframes move-chevron {
+  25% {
+    opacity: 1;
+  }
+  33.3% {
+    opacity: 1;
+    transform: translateY(2.28rem);
+  }
+  66.6% {
+    opacity: 1;
+    transform: translateY(3.12rem);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(4.8rem) scale(0.5);
+  }
+}
+	</style>
+</head>
+<body>
+
+
+
+<div id="fullpage">
+	<div class="section active" id="section0">
+  <h1>Thanks heaps for <br />signing up!</h1>
+  <h2>Please <mark>check your emails</mark> to add your phone number.</h2>
+	</div>
+
+
+			
+			
+			
+		</div>
+	</div>
+
+
+
+
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.js"></script>
+<script type="text/javascript">
+	var myFullpage = new fullpage('#fullpage', {
+		sectionsColor: ['#C299C2', 'linear-gradient(to right top, #f38596, #db7593, #c2668f, #a75a89, #8b4e82)', '#C299C2', '#EBBFC4']
+	});
+</script>
+</body>
+</html>
