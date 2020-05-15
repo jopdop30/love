@@ -157,7 +157,7 @@ transition: box-shadow 0.4s, border-radius 0.4s, background 0.4s;
 <button
   style="color:#FFF;padding:8px 12px;border:0;font-size:6vh;"
 	class="button button3"
-  id="checkout-button-plan_HEBJqsWYt2VJtB"
+  id="checkout-button-plan_HH9n3IH4HwVlLR"
   role="link"
 >
   Monthly
@@ -167,14 +167,14 @@ transition: box-shadow 0.4s, border-radius 0.4s, background 0.4s;
 
 <script>
 (function() {
-  var stripe = Stripe('pk_test_fBdAeVqe7CDSqHGpDpUYHgMy00yDujOBKE');
+  var stripe = Stripe('pk_live_DvQDZ0j4D9rILum4kcC9DNaA00mHHnMF7N');
 
-  var checkoutButton = document.getElementById('checkout-button-plan_HEBJqsWYt2VJtB');
+  var checkoutButton = document.getElementById('checkout-button-plan_HH9n3IH4HwVlLR');
   checkoutButton.addEventListener('click', function () {
     // When the customer clicks on the button, redirect
     // them to Checkout.
     stripe.redirectToCheckout({
-      items: [{plan: 'plan_HEBJqsWYt2VJtB', quantity: 1}],
+      items: [{plan: 'plan_HH9n3IH4HwVlLR', quantity: 1}],
       
       // Do not rely on the redirect to the successUrl for fulfilling
       // purchases, customers may not always reach the success_url after
@@ -201,7 +201,7 @@ transition: box-shadow 0.4s, border-radius 0.4s, background 0.4s;
 			<button
   style="color:#FFF;padding:8px 12px;border:0;font-size:6vh;"
 	class="button button3"
-  id="checkout-button-plan_HEBLFzav8mEH7D"
+  id="checkout-button-plan_HH9nyrelTchMRj"
   role="link"
 >
   Yearly
@@ -211,14 +211,14 @@ transition: box-shadow 0.4s, border-radius 0.4s, background 0.4s;
 
 <script>
 (function() {
-  var stripe = Stripe('pk_test_fBdAeVqe7CDSqHGpDpUYHgMy00yDujOBKE');
+  var stripe = Stripe('pk_live_DvQDZ0j4D9rILum4kcC9DNaA00mHHnMF7N');
 
-  var checkoutButton = document.getElementById('checkout-button-plan_HEBLFzav8mEH7D');
+  var checkoutButton = document.getElementById('checkout-button-plan_HH9nyrelTchMRj');
   checkoutButton.addEventListener('click', function () {
     // When the customer clicks on the button, redirect
     // them to Checkout.
     stripe.redirectToCheckout({
-      items: [{plan: 'plan_HEBLFzav8mEH7D', quantity: 1}],
+      items: [{plan: 'plan_HH9nyrelTchMRj', quantity: 1}],
       
       // Do not rely on the redirect to the successUrl for fulfilling
       // purchases, customers may not always reach the success_url after
