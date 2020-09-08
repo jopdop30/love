@@ -199,47 +199,7 @@ transition: box-shadow 0.4s, border-radius 0.4s, background 0.4s;
 			
 			
 			
-			<button
-  style="color:#FFF;padding:8px 12px;border:0;font-size:6vh;"
-	class="button button3"
-  id="checkout-button-plan_HH9nyrelTchMRj"
-  role="link"
->
-  Yearly
-</button>
 
-<div id="error-message"></div>
-
-<script>
-(function() {
-  var stripe = Stripe('pk_live_DvQDZ0j4D9rILum4kcC9DNaA00mHHnMF7N');
-
-  var checkoutButton = document.getElementById('checkout-button-plan_HH9nyrelTchMRj');
-  checkoutButton.addEventListener('click', function () {
-    // When the customer clicks on the button, redirect
-    // them to Checkout.
-    stripe.redirectToCheckout({
-      items: [{plan: 'plan_HH9nyrelTchMRj', quantity: 1}],
-      
-      // Do not rely on the redirect to the successUrl for fulfilling
-      // purchases, customers may not always reach the success_url after
-      // a successful payment.
-      // Instead use one of the strategies described in
-      // https://stripe.com/docs/payments/checkout/fulfillment
-      successUrl: 'https://love.bou.monster/success',
-      cancelUrl: 'https://love.bou.monster/',
-    })
-    .then(function (result) {
-      if (result.error) {
-        // If `redirectToCheckout` fails due to a browser or network
-        // error, display the localized error message to your customer.
-        var displayError = document.getElementById('error-message');
-        displayError.textContent = result.error.message;
-      }
-    });
-  });
-})();
-</script>
 			
 			
 			
